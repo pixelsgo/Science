@@ -14,6 +14,11 @@
 		6442B2E71AE1564D00F0C4C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6442B2E61AE1564D00F0C4C6 /* Images.xcassets */; };
 		6442B2EA1AE1564D00F0C4C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6442B2E81AE1564D00F0C4C6 /* LaunchScreen.xib */; };
 		6442B2F61AE1564D00F0C4C6 /* ScienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6442B2F51AE1564D00F0C4C6 /* ScienceTests.swift */; };
+		6442B3001AE1573F00F0C4C6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6442B2FF1AE1573F00F0C4C6 /* CoreBluetooth.framework */; };
+		6442B3021AE1574400F0C4C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6442B3011AE1574400F0C4C6 /* CoreLocation.framework */; };
+		6442B3041AE1575600F0C4C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6442B3031AE1575600F0C4C6 /* MediaPlayer.framework */; };
+		6442B3061AE1576300F0C4C6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6442B3051AE1576300F0C4C6 /* libsqlite3.dylib */; };
+		6442B3081AE1577E00F0C4C6 /* libpushmote-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6442B3071AE1577E00F0C4C6 /* libpushmote-sdk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,12 @@
 		6442B2EF1AE1564D00F0C4C6 /* ScienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6442B2F41AE1564D00F0C4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6442B2F51AE1564D00F0C4C6 /* ScienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceTests.swift; sourceTree = "<group>"; };
+		6442B2FF1AE1573F00F0C4C6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6442B3011AE1574400F0C4C6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6442B3031AE1575600F0C4C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6442B3051AE1576300F0C4C6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6442B3071AE1577E00F0C4C6 /* libpushmote-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpushmote-sdk.a"; path = "Science/PushmoteSDK/libpushmote-sdk.a"; sourceTree = "<group>"; };
+		6442B3091AE1580C00F0C4C6 /* Pushmote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pushmote-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6442B3081AE1577E00F0C4C6 /* libpushmote-sdk.a in Frameworks */,
+				6442B3061AE1576300F0C4C6 /* libsqlite3.dylib in Frameworks */,
+				6442B3041AE1575600F0C4C6 /* MediaPlayer.framework in Frameworks */,
+				6442B3021AE1574400F0C4C6 /* CoreLocation.framework in Frameworks */,
+				6442B3001AE1573F00F0C4C6 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,11 @@
 		6442B2CE1AE1564D00F0C4C6 = {
 			isa = PBXGroup;
 			children = (
+				6442B3071AE1577E00F0C4C6 /* libpushmote-sdk.a */,
+				6442B3051AE1576300F0C4C6 /* libsqlite3.dylib */,
+				6442B3031AE1575600F0C4C6 /* MediaPlayer.framework */,
+				6442B3011AE1574400F0C4C6 /* CoreLocation.framework */,
+				6442B2FF1AE1573F00F0C4C6 /* CoreBluetooth.framework */,
 				6442B2D91AE1564D00F0C4C6 /* Science */,
 				6442B2F21AE1564D00F0C4C6 /* ScienceTests */,
 				6442B2D81AE1564D00F0C4C6 /* Products */,
@@ -86,6 +107,7 @@
 				6442B2E81AE1564D00F0C4C6 /* LaunchScreen.xib */,
 				6442B2DE1AE1564D00F0C4C6 /* Science.xcdatamodeld */,
 				6442B2DA1AE1564D00F0C4C6 /* Supporting Files */,
+				6442B3091AE1580C00F0C4C6 /* Pushmote-Bridging-Header.h */,
 			);
 			path = Science;
 			sourceTree = "<group>";
@@ -164,6 +186,11 @@
 				TargetAttributes = {
 					6442B2D61AE1564D00F0C4C6 = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6442B2EE1AE1564D00F0C4C6 = {
 						CreatedOnToolsVersion = 6.3;
@@ -344,9 +371,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../PushmoteSDK/Headers",
+				);
 				INFOPLIST_FILE = Science/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Science/PushmoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Science/Pushmote-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -354,9 +391,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../PushmoteSDK/Headers",
+				);
 				INFOPLIST_FILE = Science/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Science/PushmoteSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Science/Pushmote-Bridging-Header.h";
 			};
 			name = Release;
 		};
