@@ -17,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let navColor = UIColor(red:0.33, green:0.68, blue:0.29, alpha: 1.0) // Color of navigation bar
+        UINavigationBar.appearance().barStyle = UIBarStyle.Black
+        UINavigationBar.appearance().barTintColor = navColor
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        var font : UIFont = UIFont(name: "HelveticaNeue-Bold", size: 14)! // Font for navigation title
+        var shadow : NSShadow = NSShadow()
+        shadow.shadowColor = UIColor.clearColor()
+        shadow.shadowOffset = CGSizeMake(0.0, 4.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor(), NSFontAttributeName : font, NSShadowAttributeName: shadow]
         
+        
+        // make the status bar white
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         Pushmote .startWithApplicationKey("b47de27e-0754-49fb-a528-d38a3b633af1")
         
         return true
