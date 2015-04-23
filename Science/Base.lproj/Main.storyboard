@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ong-Ji-z62">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ong-Ji-z62">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Directions-->
         <scene sceneID="ti4-dB-Iss">
             <objects>
-                <viewController id="0om-Lr-c9s" sceneMemberID="viewController">
+                <viewController title="Directions" id="0om-Lr-c9s" customClass="ViewController" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FT3-np-mBN"/>
                         <viewControllerLayoutGuide type="bottom" id="Obq-Nh-RFF"/>
@@ -23,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1490" y="652"/>
         </scene>
-        <!--View Controller-->
+        <!--Exhibits-->
         <scene sceneID="UgJ-gw-3cp">
             <objects>
-                <viewController id="Csl-9O-wAF" sceneMemberID="viewController">
+                <viewController title="Exhibits" id="Csl-9O-wAF" customClass="Exhibits" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fh4-Hq-Pnz"/>
                         <viewControllerLayoutGuide type="bottom" id="rGm-fL-Qtn"/>
@@ -34,7 +35,45 @@
                     <view key="view" contentMode="scaleToFill" id="2TV-1E-Vlt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-14-9TS">
+                                <rect key="frame" x="258" y="87" width="84" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="BeE-Lf-X75"/>
+                                    <constraint firstAttribute="height" constant="21" id="kQQ-8p-0kg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Tons of attractions available.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQZ-nA-jo8">
+                                <rect key="frame" x="16" y="157" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="eaz-D6-gtP"/>
+                                    <constraint firstAttribute="height" constant="21" id="kIY-Ia-M4X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Find out more information by walking up" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j31-ff-C4l">
+                                <rect key="frame" x="16" y="199" width="326" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Atw-14-9TS" firstAttribute="top" secondItem="fh4-Hq-Pnz" secondAttribute="bottom" constant="23" id="F7J-n3-9LS"/>
+                            <constraint firstItem="Atw-14-9TS" firstAttribute="trailing" secondItem="j31-ff-C4l" secondAttribute="trailing" id="FVs-Ep-ISj"/>
+                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="leading" secondItem="2TV-1E-Vlt" secondAttribute="leadingMargin" id="Fqn-Zu-iaZ"/>
+                            <constraint firstItem="j31-ff-C4l" firstAttribute="top" secondItem="qQZ-nA-jo8" secondAttribute="bottom" constant="21" id="HfZ-aQ-rQC"/>
+                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="top" secondItem="Atw-14-9TS" secondAttribute="bottom" constant="49" id="QLL-bj-gvU"/>
+                            <constraint firstItem="rGm-fL-Qtn" firstAttribute="top" secondItem="j31-ff-C4l" secondAttribute="bottom" constant="213" id="Rt4-de-UuT"/>
+                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="leading" secondItem="j31-ff-C4l" secondAttribute="leading" id="noX-nx-4lf"/>
+                            <constraint firstItem="Atw-14-9TS" firstAttribute="centerX" secondItem="2TV-1E-Vlt" secondAttribute="centerX" id="sRV-nO-2vI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kc1-JM-qXS"/>
                 </viewController>

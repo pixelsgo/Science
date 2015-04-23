@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barStyle = UIBarStyle.Black
         UINavigationBar.appearance().barTintColor = navColor
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        var font : UIFont = UIFont(name: "HelveticaNeue-Bold", size: 14)! // Font for navigation title
+        var font : UIFont = UIFont(name: "HelveticaNeue-Thin", size: 30)! // Font for navigation title
         var shadow : NSShadow = NSShadow()
         shadow.shadowColor = UIColor.clearColor()
         shadow.shadowOffset = CGSizeMake(0.0, 4.0)
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // make the status bar white
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
-        Pushmote .startWithApplicationKey("b47de27e-0754-49fb-a528-d38a3b633af1")
+        Pushmote .startWithApplicationKey("124e4dfd-310f-4006-9f27-1971f0dbe9dd")
         
         return true
     }

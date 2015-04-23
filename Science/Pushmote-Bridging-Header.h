@@ -6,3 +6,6 @@
 //  Copyright (c) 2015 Pixels. All rights reserved.
 //
 #import "PushmoteSDK/Headers/Pushmote.h"
+#import <Indoors/IndoorsBuilder.h>
+#import <IndoorsSurface/IndoorsSurfaceBuilder.h>
+#import <IndoorsSurface/IndoorsSurfaceDelegates.h>
