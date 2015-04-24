@@ -23,12 +23,13 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
         IB.setApiKey("639f54b3-f94f-4ba1-9da5-e59c148456c0")
         IB.setBuildingId(366932298)
         
+    
         let builder = IndoorsSurfaceBuilder(indoorsBuilder: IB, inView: self.view)
         IB.enableEvaluationMode(true)
         
         builder.registerForSurfaceServiceUpdates(self)
-        builder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
-        builder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeNone)
+        //builder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
+        //builder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeNone)
         
         builder.build()
         
@@ -43,9 +44,7 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
     func buildingLoaded(building: IDSBuilding!) {
         println("Unimplemented")
         
-        var b = building.floors
-        
-        
+       
     }
     
     func updateUserPosition(userPosition: IDSCoordinate!) {
