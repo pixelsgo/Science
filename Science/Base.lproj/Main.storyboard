@@ -94,31 +94,11 @@
                     <connections>
                         <segue destination="Eua-vp-S3b" kind="relationship" relationship="viewControllers" id="Wk3-Ln-qfq"/>
                         <segue destination="Q7d-Y1-hJk" kind="relationship" relationship="viewControllers" id="tkm-OF-20t"/>
-                        <segue destination="b0i-0r-dqb" kind="relationship" relationship="viewControllers" id="NwM-Eg-WoX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bw-wc-h5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-142" y="321"/>
-        </scene>
-        <!--Offers-->
-        <scene sceneID="fTF-GS-7sP">
-            <objects>
-                <viewController id="b0i-0r-dqb" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="omS-W1-dh3"/>
-                        <viewControllerLayoutGuide type="bottom" id="3PU-Ib-HQ8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jyc-9a-W5c">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Offers" image="gift" id="UWo-Nc-kqa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CcF-3w-f0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-47" y="1036"/>
         </scene>
         <!--Exhibits-->
         <scene sceneID="5u5-0K-wrk">
@@ -160,7 +140,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gift" width="32" height="32"/>
         <image name="globe" width="28" height="28"/>
         <image name="signpost" width="32" height="32"/>
     </resources>

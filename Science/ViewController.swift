@@ -11,29 +11,38 @@ import UIKit
 class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsSurfaceServiceDelegate {
 
     var userPosition : IDSCoordinate?
+     let indoors = Indoors.instance()
+    var surfaceBuilder : IndoorsSurfaceBuilder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Test")
         
         self.title = "Science Center"
         self.navigationController?.title = "Directions"
         
         let IB : IndoorsBuilder = IndoorsBuilder()
+        
         IB.setApiKey("639f54b3-f94f-4ba1-9da5-e59c148456c0")
         IB.setBuildingId(366932298)
         
     
-        let builder = IndoorsSurfaceBuilder(indoorsBuilder: IB, inView: self.view)
+        surfaceBuilder = IndoorsSurfaceBuilder(indoorsBuilder: IB, inView: self.view)
         IB.enableEvaluationMode(true)
         
-        builder.registerForSurfaceServiceUpdates(self)
-        //builder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
-        //builder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeNone)
+        surfaceBuilder.registerForSurfaceServiceUpdates(self)
+        surfaceBuilder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
+        surfaceBuilder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeDefault)
         
-        builder.build()
+        
+        
+        surfaceBuilder.build()
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func connected() {
+        surfaceBuilder.registerForSurfaceLocationUpdates(self)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +53,7 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
     func buildingLoaded(building: IDSBuilding!) {
         println("Unimplemented")
         
-       
+        
     }
     
     func updateUserPosition(userPosition: IDSCoordinate!) {
