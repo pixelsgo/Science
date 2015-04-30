@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/IndoorsSDK-iOS" "$(PODS_ROOT)/IndoorsSDK-iOS"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/IndoorsSDK-iOS"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/IndoorsSDK-iOS"
+OTHER_LDFLAGS = -ObjC -lc++ -lsqlite3.0 -lz -framework CFNetwork -framework CoreBluetooth -framework CoreGraphics -framework CoreLocation -framework CoreMotion -framework Foundation -framework Indoors -framework IndoorsSurface -framework QuartzCore -framework SystemConfiguration -framework UIKit
+PODS_ROOT = ${SRCROOT}/Pods

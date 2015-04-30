@@ -1,0 +1,2 @@
+PODS_INDOORSSDK_IOS_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/IndoorsSDK-iOS" "$(PODS_ROOT)/IndoorsSDK-iOS"
+PODS_INDOORSSDK_IOS_OTHER_LDFLAGS = -lc++ -lsqlite3.0 -lz -framework CFNetwork -framework CoreBluetooth -framework CoreGraphics -framework CoreLocation -framework CoreMotion -framework Foundation -framework Indoors -framework IndoorsSurface -framework QuartzCore -framework SystemConfiguration -framework UIKit

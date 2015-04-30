@@ -9,9 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsSurfaceServiceDelegate {
-
-    var userPosition : IDSCoordinate?
-     let indoors = Indoors.instance()
+    let indoors = Indoors.instance()
     var surfaceBuilder : IndoorsSurfaceBuilder!
     
     override func viewDidLoad() {
@@ -21,7 +19,7 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
         self.navigationController?.title = "Directions"
         
         let IB : IndoorsBuilder = IndoorsBuilder()
-        
+        let uP : UIImage = UIImage(named: "user")!
         IB.setApiKey("639f54b3-f94f-4ba1-9da5-e59c148456c0")
         IB.setBuildingId(366932298)
         
@@ -32,10 +30,9 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
         surfaceBuilder.registerForSurfaceServiceUpdates(self)
         surfaceBuilder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
         surfaceBuilder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeDefault)
-        
-        
-        
+        surfaceBuilder.indoorsSurface.routeSnappingEnabled = true
         surfaceBuilder.build()
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -43,6 +40,7 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
     func connected() {
         surfaceBuilder.registerForSurfaceLocationUpdates(self)
         
+        //Indoors.registerLocationListener(self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,9 +55,11 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
     }
     
     func updateUserPosition(userPosition: IDSCoordinate!) {
-        self.userPosition = userPosition
-        println("userPosition: x:\(userPosition.x) y:\(userPosition.y) z:\(userPosition.z)")
+        
+        //println("userPosition: x:\(userPosition.x) y:\(userPosition.y) z:\(userPosition.z)")
     }
+    
+    
 
 }
 
