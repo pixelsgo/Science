@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Science/ViewController.swift"
-            timestampString = "452030843.122495"
+            timestampString = "452101410.791415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "buildingLoaded(_:)"
             landmarkType = "5">
          </BreakpointContent>

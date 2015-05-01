@@ -5,29 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Directions-->
-        <scene sceneID="ti4-dB-Iss">
-            <objects>
-                <viewController title="Directions" id="0om-Lr-c9s" customClass="ViewController" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FT3-np-mBN"/>
-                        <viewControllerLayoutGuide type="bottom" id="Obq-Nh-RFF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g7O-vR-keQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LXd-XI-Vma"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7gc-5D-4EP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1490" y="652"/>
-        </scene>
-        <!--Exhibits-->
+        <!--Exhibits View Controller-->
         <scene sceneID="UgJ-gw-3cp">
             <objects>
-                <viewController title="Exhibits" id="Csl-9O-wAF" customClass="Exhibits" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Exhibits View Controller" id="Csl-9O-wAF" customClass="Exhibits" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fh4-Hq-Pnz"/>
                         <viewControllerLayoutGuide type="bottom" id="rGm-fL-Qtn"/>
@@ -36,43 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-14-9TS">
-                                <rect key="frame" x="258" y="87" width="84" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out our exhibits!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Ek-vWc">
+                                <rect key="frame" x="16" y="229" width="247" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="BeE-Lf-X75"/>
-                                    <constraint firstAttribute="height" constant="21" id="kQQ-8p-0kg"/>
+                                    <constraint firstAttribute="width" constant="247" id="aYP-w5-MOK"/>
+                                    <constraint firstAttribute="height" constant="21" id="zn2-P7-zHa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Tons of attractions available.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQZ-nA-jo8">
-                                <rect key="frame" x="16" y="157" width="278" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gsologo" translatesAutoresizingMaskIntoConstraints="NO" id="YFl-3Q-mk2">
+                                <rect key="frame" x="160" y="72" width="280" height="137"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="278" id="eaz-D6-gtP"/>
-                                    <constraint firstAttribute="height" constant="21" id="kIY-Ia-M4X"/>
+                                    <constraint firstAttribute="width" constant="280" id="lZr-uo-QaV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Find out more information by walking up" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j31-ff-C4l">
-                                <rect key="frame" x="16" y="199" width="326" height="139"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Atw-14-9TS" firstAttribute="top" secondItem="fh4-Hq-Pnz" secondAttribute="bottom" constant="23" id="F7J-n3-9LS"/>
-                            <constraint firstItem="Atw-14-9TS" firstAttribute="trailing" secondItem="j31-ff-C4l" secondAttribute="trailing" id="FVs-Ep-ISj"/>
-                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="leading" secondItem="2TV-1E-Vlt" secondAttribute="leadingMargin" id="Fqn-Zu-iaZ"/>
-                            <constraint firstItem="j31-ff-C4l" firstAttribute="top" secondItem="qQZ-nA-jo8" secondAttribute="bottom" constant="21" id="HfZ-aQ-rQC"/>
-                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="top" secondItem="Atw-14-9TS" secondAttribute="bottom" constant="49" id="QLL-bj-gvU"/>
-                            <constraint firstItem="rGm-fL-Qtn" firstAttribute="top" secondItem="j31-ff-C4l" secondAttribute="bottom" constant="213" id="Rt4-de-UuT"/>
-                            <constraint firstItem="qQZ-nA-jo8" firstAttribute="leading" secondItem="j31-ff-C4l" secondAttribute="leading" id="noX-nx-4lf"/>
-                            <constraint firstItem="Atw-14-9TS" firstAttribute="centerX" secondItem="2TV-1E-Vlt" secondAttribute="centerX" id="sRV-nO-2vI"/>
+                            <constraint firstItem="rGm-fL-Qtn" firstAttribute="top" secondItem="FpV-Ek-vWc" secondAttribute="bottom" constant="301" id="DI7-Lu-TL6"/>
+                            <constraint firstItem="YFl-3Q-mk2" firstAttribute="top" secondItem="fh4-Hq-Pnz" secondAttribute="bottom" constant="8" symbolic="YES" id="IiG-Fi-Q0T"/>
+                            <constraint firstItem="FpV-Ek-vWc" firstAttribute="leading" secondItem="2TV-1E-Vlt" secondAttribute="leadingMargin" id="XST-jO-G9n"/>
+                            <constraint firstItem="FpV-Ek-vWc" firstAttribute="top" secondItem="YFl-3Q-mk2" secondAttribute="bottom" constant="20" id="Zwc-p1-AHN"/>
+                            <constraint firstItem="YFl-3Q-mk2" firstAttribute="centerX" secondItem="2TV-1E-Vlt" secondAttribute="centerX" id="rxT-e9-BlK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kc1-JM-qXS"/>
@@ -93,17 +60,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="Eua-vp-S3b" kind="relationship" relationship="viewControllers" id="Wk3-Ln-qfq"/>
-                        <segue destination="Q7d-Y1-hJk" kind="relationship" relationship="viewControllers" id="tkm-OF-20t"/>
+                        <segue destination="wdU-fW-lbO" kind="relationship" relationship="viewControllers" id="6Qd-YO-Aec"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bw-wc-h5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-142" y="321"/>
         </scene>
-        <!--Exhibits-->
+        <!--Exhibits Navigation Controller-->
         <scene sceneID="5u5-0K-wrk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eua-vp-S3b" sceneMemberID="viewController">
+                <navigationController title="Exhibits Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="Eua-vp-S3b" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Exhibits" image="signpost" id="NJE-pa-Gj8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ylG-6S-quN">
@@ -112,35 +79,55 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Csl-9O-wAF" kind="relationship" relationship="rootViewController" id="Yar-Cl-Gxy"/>
+                        <segue destination="Csl-9O-wAF" kind="relationship" relationship="rootViewController" id="q3h-nP-xOb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljm-r1-5Ku" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="678" y="-10"/>
         </scene>
-        <!--Directions-->
-        <scene sceneID="JII-N7-ZBf">
+        <!--Map View Controller-->
+        <scene sceneID="AUH-Wh-amp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q7d-Y1-hJk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Directions" image="globe" id="Nyn-yj-Hp8"/>
+                <viewController storyboardIdentifier="mapSeg" title="Map View Controller" id="bH9-wk-3Vi" customClass="ViewController" customModule="Science" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jxe-em-QS4"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8G-Ho-6aI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bRB-Ch-X7W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ppV-p5-OKH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vU-xo-J7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="1090"/>
+        </scene>
+        <!--Map Navigation Controller-->
+        <scene sceneID="vN8-yA-5kw">
+            <objects>
+                <navigationController title="Map Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="wdU-fW-lbO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="globe" id="hWN-YY-b6Y"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FVN-MO-SAI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oQ8-XJ-Wau">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0om-Lr-c9s" kind="relationship" relationship="rootViewController" id="5OR-dZ-o5G"/>
+                        <segue destination="bH9-wk-3Vi" kind="relationship" relationship="rootViewController" id="vXH-Bc-YbF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqp-bs-PCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obM-Lo-j55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="652"/>
+            <point key="canvasLocation" x="-142" y="1090"/>
         </scene>
     </scenes>
     <resources>
         <image name="globe" width="28" height="28"/>
+        <image name="gsologo" width="151" height="62"/>
         <image name="signpost" width="32" height="32"/>
     </resources>
 </document>

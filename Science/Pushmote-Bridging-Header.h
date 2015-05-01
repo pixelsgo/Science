@@ -7,5 +7,6 @@
 //
 #import "PushmoteSDK/Headers/Pushmote.h"
 #import <Indoors/IndoorsBuilder.h>
+#import <Indoors/IndoorsLocationListener.h>
 #import <IndoorsSurface/IndoorsSurfaceBuilder.h>
 #import <IndoorsSurface/IndoorsSurfaceDelegates.h>

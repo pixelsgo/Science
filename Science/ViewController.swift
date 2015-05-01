@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsSurfaceServiceDelegate {
+class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsSurfaceServiceDelegate
+//, IndoorsSurfaceViewDelegate 
+{
     let indoors = Indoors.instance()
     var surfaceBuilder : IndoorsSurfaceBuilder!
     
@@ -18,8 +20,7 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
         self.title = "Science Center"
         self.navigationController?.title = "Directions"
         
-        let IB : IndoorsBuilder = IndoorsBuilder()
-        let uP : UIImage = UIImage(named: "user")!
+        var IB : IndoorsBuilder = IndoorsBuilder()
         IB.setApiKey("639f54b3-f94f-4ba1-9da5-e59c148456c0")
         IB.setBuildingId(366932298)
         
@@ -30,12 +31,22 @@ class ViewController: UIViewController, IndoorsSurfaceLocationDelegate, IndoorsS
         surfaceBuilder.registerForSurfaceServiceUpdates(self)
         surfaceBuilder.setZoneDisplayMode(IndoorsSurfaceZoneDisplayModeUserCurrentLocation)
         surfaceBuilder.setUserPositionDisplayMode(IndoorsSurfaceUserPositionDisplayModeDefault)
+        
         surfaceBuilder.indoorsSurface.routeSnappingEnabled = true
         surfaceBuilder.build()
         
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    /*
+    override func loadView() {
+        var IS : ISIndoorsSurface = ISIndoorsSurface()
+    
+        IS.enableAutomaticFloorSelection = true
+        IS.delegate = self
+        self.view = IS
+    }
+    */
     
     func connected() {
         surfaceBuilder.registerForSurfaceLocationUpdates(self)

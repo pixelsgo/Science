@@ -15,10 +15,10 @@ class Exhibits : UIViewController {
         self.navigationController?.title = "Exhibits"
         
         // create horizontal divider 1px height
-        let divider = UIView(frame: CGRect(x: 10, y: 130, width: 280, height: 1))
+       /* let divider = UIView(frame: CGRect(x: 10, y: 130, width: 280, height: 1))
         divider.backgroundColor = UIColor.blackColor()
         
-        self.view.addSubview(divider)
+        self.view.addSubview(divider)*/
     }
     
 }
